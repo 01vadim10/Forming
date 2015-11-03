@@ -13,6 +13,7 @@ VAR
 	H202_Ready_DO : BOOL := FALSE;
 	H202_ElmOn_DO : BOOL := FALSE;
 	H202_Start_DI : BOOL := FALSE;
+	H202_DO_B : BOOL := FALSE;
 END_VAR
 (*Conv 203*)
 VAR
@@ -25,6 +26,7 @@ VAR
 	H203_MoveControl_DI : BOOL := FALSE;
 	H203_ElmBeltStart_DI : BOOL := FALSE;
 	H203_Ready_DO : BOOL := FALSE;
+	H203_DO_B : BOOL := FALSE;
 END_VAR
 (*Conv 204*)
 VAR
@@ -37,6 +39,7 @@ VAR
 	H204_MoveControl_DI : BOOL := FALSE;
 	H204_ElmBeltStart_DI : BOOL := FALSE;
 	H204_Ready_DO : BOOL := FALSE;
+	H204_DO_B : BOOL := FALSE;
 END_VAR
 (*Conv 205*)
 VAR
@@ -56,6 +59,7 @@ VAR
 	H205_TranspElmOn_DO : BOOL := FALSE;
 	H205_CombElmBackwOn_DO : BOOL := FALSE;
 	H205_CombElmForwOn_DO : BOOL := FALSE;
+	H205_DO_B : BOOL := FALSE;
 END_VAR
 (*Conv 207*)
 VAR
@@ -68,16 +72,18 @@ VAR
 	H207_ElmBeltStart_DI : BOOL := FALSE;
 	H207_Ready_DO : BOOL := FALSE;
 	H207_ElmOn_DO : BOOL := FALSE;
+	H207_DO_B : BOOL := FALSE;
 END_VAR
 (*Conv 209*)
 VAR
-	H209_ElmStartStop_DI : BOOL := FALSE;
+	H209_ElmBeltStart_DI : BOOL := FALSE;
 	H209_PrElmOn_DI : BOOL := FALSE;
 	H209_ElmStartStop_DO : BOOL := FALSE;
 	H209_Ready_DI : BOOL := FALSE;
 	H209_DownControl_DI : BOOL := FALSE;
 	H209_BordersControl_DI : BOOL := FALSE;
 	H209_MoveControl_DI : BOOL := FALSE;
+	H209_DO_B : BOOL := FALSE;
 END_VAR
 (*Conv 212*)
 VAR
@@ -96,6 +102,8 @@ VAR
 	H212_Backward_DO : BOOL := FALSE;
 	H212_PrElmBottom_DI : BOOL := FALSE;
 	H212_MetDetector_DI : BOOL := FALSE;
+	H212_DO_BF : BOOL := FALSE; (* нопка - конвейер вперед*)
+	H212_DO_BB : BOOL := FALSE; (* нопка - конвейер назад*)
 END_VAR
 (*Conv 213*)
 VAR
@@ -105,6 +113,7 @@ VAR
 	H213_DownControl_DI : BOOL := FALSE;
 	H213_BordersControl_DI : BOOL := FALSE;
 	H213_MoveControl_DI : BOOL := FALSE;
+	H213_DO_B : BOOL := FALSE;
 END_VAR
 (*Conv 215*)
 VAR
@@ -116,6 +125,7 @@ VAR
 	H215_MoveControl_DI : BOOL := FALSE;
 	H215_Light_DI : BOOL := FALSE;
 	H215_Lamp_DO : BOOL := FALSE;
+	H215_DO_B : BOOL := FALSE;
 END_VAR
 (*Conv 216*)
 VAR
@@ -127,6 +137,7 @@ VAR
 	H216_MoveControl_DI : BOOL := FALSE;
 	H216_Light_DI : BOOL := FALSE;
 	H216_Lamp_DO : BOOL := FALSE;
+	H216_DO_B : BOOL := FALSE;
 END_VAR
 (*Conv 217*)
 VAR
@@ -141,9 +152,5 @@ VAR
 	H217_Light_DI : BOOL := FALSE;
 	H217_Start_DI : BOOL := FALSE;
 	H217_StartStop_DO : BOOL := FALSE;
-	New_Variable49 : BOOL := FALSE;
-	New_Variable50 : BOOL := FALSE;
-	New_Variable51 : BOOL := FALSE;
-	New_Variable52 : BOOL := FALSE;
-	New_Variable : BOOL := FALSE;
+	H217_DO_B : BOOL := FALSE;
 END_VAR

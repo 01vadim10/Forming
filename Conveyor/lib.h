@@ -2,28 +2,12 @@
 	Проверка блокировок:
   	если сработала одна из блокировок возвращает 1, иначе 0
 */
-BOOL blockingCheck(BOOL PrElmOn, BOOL DownControl, BOOL BordersControl, BOOL MoveControl)
+BOOL blockingCheck(BOOL Ready, BOOL PrElmOn, BOOL DownControl, BOOL BordersControl, BOOL MoveControl)
 {
 	BOOL out;
 	out = 0;
-	if (PrElmOn || DownControl || BordersControl || MoveControl)
+	if (Ready || PrElmOn || DownControl || BordersControl || MoveControl)
 		out = 1;
-	
-	return out;
-}
-
-
-/* 	
-	Mode = 0 - ручной режим
-	Mode = 1 - автомат. режим
-*/
-BOOL blockingCheckMode(BOOL Mode, BOOL Ready, BOOL ElmBeltStart)
-{
-	BOOL out;
-	out = 0;
-	if (Mode == 0)
-		out = !Ready;
-	else out = !ElmBeltStart;
 	
 	return out;
 }
@@ -32,28 +16,44 @@ BOOL blockingCheckMode(BOOL Mode, BOOL Ready, BOOL ElmBeltStart)
 	Запуск конвейера
 	ConvStart - переменная DO, которая запускает данный конвейер
 */
-void convH2XXStart(BOOL ConvStart)
+void convH2XXStart(BOOL *ConvStart)
 {
-	ConvStart = 1;
+	*ConvStart = 1;
 }
 
 /*	
 	Остановка конвейера
 	ConvStart - переменная DO, которая запускает данный конвейер
 */
-void convH2XXStop(BOOL ConvStart)
+void convH2XXStop(BOOL *ConvH2XX_DO_B, BOOL *ConvStart)
 {
-	ConvStart = 0;
+	*ConvStart = 0;
+	*ConvH2XX_DO_B = 0;
+}
+
+/*
+	Обработка сигналов с пульта местного управления.
+*/
+void contrPanel(BOOL Ready_DI, BOOL ElmBeltStart_DI, BOOL *Ready, BOOL *ElmOn)
+{
+	*Ready = Ready_DI;
+	*ElmOn = ElmBeltStart_DI;
+}
+
+BOOL checkPanelLC(BOOL ElmBeltStart_DI, BOOL *ConvH2XX_DO_B)
+{
+	if (*ConvH2XX_DO_B)
+		*ConvH2XX_DO_B = !ElmBeltStart_DI;
+	return *ConvH2XX_DO_B;
 }
 
 /*
 	convH2XX_DO_B - переменная привязываемая к кнопке панели, отвечающая за запуск конвейера ("Пуск/Стоп")
 */
-void convH2XX(BOOL PrElmOn, BOOL DownControl, BOOL BordersControl, BOOL MoveControl, BOOL Mode, BOOL Ready, BOOL ElmBeltStart,
-	BOOL ConvStart)
+void convH2XX(BOOL Ready_DI, BOOL PrElmOn, BOOL DownControl, BOOL BordersControl, BOOL MoveControl, 
+			  BOOL *ConvH2XX_DO_B, BOOL *ConvStart)
 {
-	if (!blockingCheck(PrElmOn, DownControl, BordersControl, MoveControl)/* && !blockingCheckMode(Mode, Ready, ElmBeltStart)*/ &&
-		convH2XX_DO_B)
-		convH2XXStart(ConvStart);
-	else convH2XXStop(ConvStart);
+	if (!blockingCheck(Ready_DI, PrElmOn, DownControl, BordersControl, MoveControl) && *ConvH2XX_DO_B)
+		convH2XXStart(&ConvStart);
+	else convH2XXStop(&ConvH2XX_DO_B, &ConvStart);
 }
