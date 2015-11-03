@@ -1,0 +1,149 @@
+(*Conv 202*)
+VAR
+	H202_Light_DI : BOOL := FALSE;
+	H202_Lamp_DO : BOOL := FALSE;
+	H202_PrElmOn_DI : BOOL := FALSE;
+	H202_ElmStartStop_DO : BOOL := FALSE;
+	H202_Ready_DI : BOOL := FALSE;
+	H202_DownControl_DI : BOOL := FALSE;
+	H202_BordersControl_DI : BOOL := FALSE;
+	H202_MoveControl_DI : BOOL := FALSE;
+	H202_MaterialControl_DI : BOOL := FALSE;
+	H202_ElmBeltStart_DI : BOOL := FALSE;
+	H202_Ready_DO : BOOL := FALSE;
+	H202_ElmOn_DO : BOOL := FALSE;
+	H202_Start_DI : BOOL := FALSE;
+END_VAR
+(*Conv 203*)
+VAR
+	H203_ElmOn_DO : BOOL := FALSE;
+	H203_PrElmOn_DI : BOOL := FALSE;
+	H203_ElmStartStop_DO : BOOL := FALSE;
+	H203_Ready_DI : BOOL := FALSE;
+	H203_DownControl_DI : BOOL := FALSE;
+	H203_BordersControl_DI : BOOL := FALSE;
+	H203_MoveControl_DI : BOOL := FALSE;
+	H203_ElmBeltStart_DI : BOOL := FALSE;
+	H203_Ready_DO : BOOL := FALSE;
+END_VAR
+(*Conv 204*)
+VAR
+	H204_ElmOn_DO : BOOL := FALSE;
+	H204_PrElmOn_DI : BOOL := FALSE;
+	H204_ElmStartStop_DO : BOOL := FALSE;
+	H204_Ready_DI : BOOL := FALSE;
+	H204_DownControl_DI : BOOL := FALSE;
+	H204_BordersControl_DI : BOOL := FALSE;
+	H204_MoveControl_DI : BOOL := FALSE;
+	H204_ElmBeltStart_DI : BOOL := FALSE;
+	H204_Ready_DO : BOOL := FALSE;
+END_VAR
+(*Conv 205*)
+VAR
+	H205_ElmStartStop_DO : BOOL := FALSE;
+	H205_StartForward_DO : BOOL := FALSE;
+	H205_StartBackward_DO : BOOL := FALSE;
+	H205_PrElmOn_DI : BOOL := FALSE;
+	H205_TransporterOn_DI : BOOL := FALSE;
+	H205_StartForward_DI : BOOL := FALSE;
+	H205_StartBackward_DI : BOOL := FALSE;
+	H205_Ready_DI : BOOL := FALSE;
+	H205_CombControl_DI : BOOL := FALSE;
+	H205_ElmTranspStart_DI : BOOL := FALSE;
+	H205_StartForwardMan_DI : BOOL := FALSE;
+	H205_StartBackwardMan_DI : BOOL := FALSE;
+	H205_Ready_DO : BOOL := FALSE;
+	H205_TranspElmOn_DO : BOOL := FALSE;
+	H205_CombElmBackwOn_DO : BOOL := FALSE;
+	H205_CombElmForwOn_DO : BOOL := FALSE;
+END_VAR
+(*Conv 207*)
+VAR
+	H207_PrElmOn_DI : BOOL := FALSE;
+	H207_ElmStartStop_DO : BOOL := FALSE;
+	H207_Ready_DI : BOOL := FALSE;
+	H207_DownControl_DI : BOOL := FALSE;
+	H207_BordersControl_DI : BOOL := FALSE;
+	H207_MoveControl_DI : BOOL := FALSE;
+	H207_ElmBeltStart_DI : BOOL := FALSE;
+	H207_Ready_DO : BOOL := FALSE;
+	H207_ElmOn_DO : BOOL := FALSE;
+END_VAR
+(*Conv 209*)
+VAR
+	H209_ElmStartStop_DI : BOOL := FALSE;
+	H209_PrElmOn_DI : BOOL := FALSE;
+	H209_ElmStartStop_DO : BOOL := FALSE;
+	H209_Ready_DI : BOOL := FALSE;
+	H209_DownControl_DI : BOOL := FALSE;
+	H209_BordersControl_DI : BOOL := FALSE;
+	H209_MoveControl_DI : BOOL := FALSE;
+END_VAR
+(*Conv 212*)
+VAR
+	H212_ElmBeltStart_DI : BOOL := FALSE;
+	H212_LightForward_DI : BOOL := FALSE;
+	H212_Ready_DI : BOOL := FALSE;
+	H212_DownControl_DI : BOOL := FALSE;
+	H212_BordersControl_DI : BOOL := FALSE;
+	H212_MoveControl_DI : BOOL := FALSE;
+	H212_LightBackward_DI : BOOL := FALSE;
+	H212_LampForward_DO : BOOL := FALSE;
+	H212_LampBackward_DO : BOOL := FALSE;
+	H212_LampBelt2_DO : BOOL := FALSE;
+	H212_PrElmOn_DI : BOOL := FALSE;
+	H212_Forward_DO : BOOL := FALSE;
+	H212_Backward_DO : BOOL := FALSE;
+	H212_PrElmBottom_DI : BOOL := FALSE;
+	H212_MetDetector_DI : BOOL := FALSE;
+END_VAR
+(*Conv 213*)
+VAR
+	H213_PrElmOn_DI : BOOL := FALSE;
+	H213_ElmStartStop_DO : BOOL := FALSE;
+	H213_Ready_DI : BOOL := FALSE;
+	H213_DownControl_DI : BOOL := FALSE;
+	H213_BordersControl_DI : BOOL := FALSE;
+	H213_MoveControl_DI : BOOL := FALSE;
+END_VAR
+(*Conv 215*)
+VAR
+	H215_PrElmOn_DI : BOOL := FALSE;
+	H215_ElmStartStop_DO : BOOL := FALSE;
+	H215_Ready_DI : BOOL := FALSE;
+	H215_DownControl_DI : BOOL := FALSE;
+	H215_BordersControl_DI : BOOL := FALSE;
+	H215_MoveControl_DI : BOOL := FALSE;
+	H215_Light_DI : BOOL := FALSE;
+	H215_Lamp_DO : BOOL := FALSE;
+END_VAR
+(*Conv 216*)
+VAR
+	H216_PrElmOn_DI : BOOL := FALSE;
+	H216_ElmStartStop_DO : BOOL := FALSE;
+	H216_Ready_DI : BOOL := FALSE;
+	H216_DownControl_DI : BOOL := FALSE;
+	H216_BordersControl_DI : BOOL := FALSE;
+	H216_MoveControl_DI : BOOL := FALSE;
+	H216_Light_DI : BOOL := FALSE;
+	H216_Lamp_DO : BOOL := FALSE;
+END_VAR
+(*Conv 217*)
+VAR
+	H217_PrElm_DI : BOOL := FALSE;
+	H217_PrElmOn_DI : BOOL := FALSE;
+	H217_ElmStartStop_DO : BOOL := FALSE;
+	H217_Ready_DI : BOOL := FALSE;
+	H217_DownControl_DI : BOOL := FALSE;
+	H217_BordersControl_DI : BOOL := FALSE;
+	H217_MoveControl_DI : BOOL := FALSE;
+	H217_LightBottom_DI : BOOL := FALSE;
+	H217_Light_DI : BOOL := FALSE;
+	H217_Start_DI : BOOL := FALSE;
+	H217_StartStop_DO : BOOL := FALSE;
+	New_Variable49 : BOOL := FALSE;
+	New_Variable50 : BOOL := FALSE;
+	New_Variable51 : BOOL := FALSE;
+	New_Variable52 : BOOL := FALSE;
+	New_Variable : BOOL := FALSE;
+END_VAR

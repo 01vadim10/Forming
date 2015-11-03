@@ -1,0 +1,74 @@
+(*Управляющие сигналы H01*)
+VAR
+	H01_ControlVoltage_DI : BOOL := FALSE;
+	H01_AutoControl_DI : BOOL := FALSE;
+	H01_BAutoStop_DI : BOOL := FALSE;
+	H01_BMoveMatStop1_DI : BOOL := FALSE;
+	H01_BAutoManMode_DI : BOOL := FALSE;
+	H01_BAutoStart_DI : BOOL := FALSE;
+	H01_BMoveMatStart1_DI : BOOL := FALSE;
+	H01_BExplEnd_DI : BOOL := FALSE;
+	H01_BMoveMatStart2_DI : BOOL := FALSE;
+	H01_BMoveMatStop2_DI : BOOL := FALSE;
+	H01_Bypass1_DI : BOOL := FALSE;
+	H01_Bypass2_DI : BOOL := FALSE;
+	H01_Ident1_DI : BOOL := FALSE;
+	H01_Ident2_DI : BOOL := FALSE;
+	H01_Ident3_DI : BOOL := FALSE;
+	H01_ElmWPumpOn_DI : BOOL := FALSE;
+	H01_LampMoveMat2On_DO : BOOL := FALSE;
+	H01_LampWetSide_DO : BOOL := FALSE;
+	H01_LampMoveMat2Mode_DO : BOOL := FALSE;
+	H01_Bypass1_DO : BOOL := FALSE;
+	H01_Bypass2_DO : BOOL := FALSE;
+	H01_SocketOn_DO : BOOL := FALSE;
+	H01_FuseVoltage_DI : BOOL := FALSE;
+	H01_Switcher1On_DI : BOOL := FALSE;
+	H01_BSignalLamp_DI : BOOL := FALSE;
+	H01_LampVoltage_DO : BOOL := FALSE;
+	H01_LampAutoMode_DO : BOOL := FALSE;
+	H01_LampMoveMat1Mode_DO : BOOL := FALSE;
+	H01_LampAutoModeOn_DO : BOOL := FALSE;
+	H01_LampMoveMat1On_DO : BOOL := FALSE;
+	H01_LampExplEnd_DO : BOOL := FALSE;
+	H01_PrDeviceVolt_DO : BOOL := FALSE;
+	H01_LampPreAutoMan_DO : BOOL := FALSE;
+	H01_PreAutoOn_DO : BOOL := FALSE;
+	H01_Reset_DO : BOOL := FALSE;
+	H01_LampFault_DO : BOOL := FALSE;
+	H01_SoundForming_DO : BOOL := FALSE;
+	H01_BFailure_DI : BOOL := FALSE;
+	H01_PrMagnV_DI : BOOL := FALSE;
+	H01_PneumSw_DI : BOOL := FALSE;
+	H01_ZeroP_DI : BOOL := FALSE;
+	H01_ZeroP2_DI : BOOL := FALSE;
+	H01_ZeroPRustik_DI : BOOL := FALSE;
+	H01_PrElmVacP_DI : BOOL := FALSE;
+	H01_Winding_DI : BOOL := FALSE;
+	H01_TempVacP_DI : BOOL := FALSE;
+	H01_Filter_DI : BOOL := FALSE;
+	H01_WLevelMax_DI : BOOL := FALSE;
+	H01_WLevelMin_DI : BOOL := FALSE;
+END_VAR
+(*Контроль состояния цепей управления H02*)
+VAR
+	H02_SS1_DI : BOOL := FALSE;
+	H02_Control_DI : BOOL := FALSE;
+	H02_ManMode_DO : BOOL := FALSE;
+	H02_AutoMode_DO : BOOL := FALSE;
+	H02_Control_DO : BOOL := FALSE;
+	H02_Fault_DO : BOOL := FALSE;
+	H02_ControlCircuit_DO : BOOL := FALSE;
+	H02_Permission1_DO : BOOL := FALSE;
+	H02_Permission2_DO : BOOL := FALSE;
+	H02_Reset_DI : BOOL := FALSE;
+	H02_Permission1_DI : BOOL := FALSE;
+	H02_Permission2_DI : BOOL := FALSE;
+END_VAR
+(*Включение предпусковой сигнализации H03*)
+VAR
+	H03_PreStart1_DO : BOOL := FALSE;
+	H03_PreStart2_DO : BOOL := FALSE;
+	H03_LampPreStart1_DO : BOOL := FALSE;
+	H03_LampPreStart2_DO : BOOL := FALSE;
+END_VAR

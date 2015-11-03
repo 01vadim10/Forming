@@ -1,0 +1,27 @@
+VAR
+	H208_ClutchOn_DO : BOOL := FALSE;
+	H208_ElmStartStop_DO : BOOL := FALSE;
+	H208_OilpStartStop_DO : BOOL := FALSE;
+	H208_ClutchStarting_DO : BOOL := FALSE;
+	H208_ValveWOn_DO : BOOL := FALSE;
+	H208_CurrentBControl_AI : INT := 0;
+	H208_PrOn_DI : BOOL := FALSE;
+	H208_ElmOn_DI : BOOL := FALSE;
+	H208_ProElmOilpOn_DI : BOOL := FALSE;
+	H208_OilpOn_DI : BOOL := FALSE;
+	H208_PressureNon_DI : BOOL := FALSE;
+	H208_ElmStart_DI : BOOL := FALSE;
+	H208_ElmStop_DI : BOOL := FALSE;
+	H208_ClutchOn_DI : BOOL := FALSE;
+	H208_ValveWOn_DI : BOOL := FALSE;
+	H208_OilpStart_DI : BOOL := FALSE;
+	H208_OilpStop_DI : BOOL := FALSE;
+	H208_Ready_DO : BOOL := FALSE;
+	H208_ElmOn_DO : BOOL := FALSE;
+	H208_Overload_DO : BOOL := FALSE;
+	H208_OilPressureNorm_DO : BOOL := FALSE;
+	H208_Normal_DO : BOOL := FALSE;
+	H208_ClutchOnInd_DO : BOOL := FALSE;
+	H208_ValveWOnInd_DO : BOOL := FALSE;
+	H208_MixerStartStop_DO : BOOL := FALSE;
+END_VAR
