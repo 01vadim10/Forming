@@ -2,6 +2,7 @@
 <?AutomationStudio Version=4.2.2.134?>
 <Program xmlns="http://br-automation.co.at/AS/Program">
   <Files>
+    <File>lib.h</File>
     <File Description="Cyclic code">Cyclic.c</File>
     <File Description="Initialization code">Init.c</File>
     <File Description="Exit code">Exit.c</File>

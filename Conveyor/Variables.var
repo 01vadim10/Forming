@@ -41,26 +41,6 @@ VAR
 	H204_Ready_DO : BOOL := FALSE;
 	H204_DO_B : BOOL := FALSE;
 END_VAR
-(*Conv 205*)
-VAR
-	H205_ElmStartStop_DO : BOOL := FALSE;
-	H205_StartForward_DO : BOOL := FALSE;
-	H205_StartBackward_DO : BOOL := FALSE;
-	H205_PrElmOn_DI : BOOL := FALSE;
-	H205_TransporterOn_DI : BOOL := FALSE;
-	H205_StartForward_DI : BOOL := FALSE;
-	H205_StartBackward_DI : BOOL := FALSE;
-	H205_Ready_DI : BOOL := FALSE;
-	H205_CombControl_DI : BOOL := FALSE;
-	H205_ElmTranspStart_DI : BOOL := FALSE;
-	H205_StartForwardMan_DI : BOOL := FALSE;
-	H205_StartBackwardMan_DI : BOOL := FALSE;
-	H205_Ready_DO : BOOL := FALSE;
-	H205_TranspElmOn_DO : BOOL := FALSE;
-	H205_CombElmBackwOn_DO : BOOL := FALSE;
-	H205_CombElmForwOn_DO : BOOL := FALSE;
-	H205_DO_B : BOOL := FALSE;
-END_VAR
 (*Conv 207*)
 VAR
 	H207_PrElmOn_DI : BOOL := FALSE;
